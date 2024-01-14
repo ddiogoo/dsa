@@ -8,6 +8,10 @@ import (
 )
 
 func main() {
+	ordenacaoPorInsercao()
+}
+
+func ordenacaoPorInsercao() {
 	fmt.Println("Qual o tamanho do array que você deseja ordenar?")
 	fmt.Println("(Os valores serão inseridos automaticamente no array)")
 
