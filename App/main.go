@@ -20,6 +20,12 @@ func main() {
 
 	arr = ordenacaoporinsercao.Ordenar(arr)
 	fmt.Println("Depois de ordenar: ", arr)
+
+	otherArr := []int{31, 41, 59, 26, 41, 58}
+	fmt.Println("Antes de ordenar: ", otherArr)
+
+	ordenacaoporinsercao.OrdenarDecrescente(otherArr)
+	fmt.Println("Depois de ordenar: ", otherArr)
 }
 
 func generateArray(size int) []int {
