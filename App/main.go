@@ -8,7 +8,18 @@ import (
 )
 
 func main() {
-	ordenacaoPorInsercao()
+	var method string
+
+	fmt.Println("Qual método você deseja executar? ")
+	fmt.Print("1) Ordenação por Inserção\n2) Abordagem Divisão e Conquista\n")
+	fmt.Scan(&method)
+
+	switch method {
+	case "1":
+		ordenacaoPorInsercao()
+	case "2":
+		// abordagemDivisaoEConquista()
+	}
 }
 
 func ordenacaoPorInsercao() {
