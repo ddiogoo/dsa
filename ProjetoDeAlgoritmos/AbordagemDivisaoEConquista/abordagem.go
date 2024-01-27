@@ -1,3 +1,14 @@
+package abordagemdivisaoeconquista
+
+func MergeSort(A *[]int, p int, r int) {
+	if p < r {
+		q := (p + r) / 2
+		MergeSort(A, p, q)
+		MergeSort(A, q+1, r)
+		merge(A, p, q, r)
+	}
+}
+
 func merge(A *[]int, p int, q int, r int) {
 	n1 := q - p + 1
 	n2 := r - q
