@@ -1,10 +1,39 @@
 package abordagemdivisaoeconquista
 
-func MergeSort(A *[]int, p int, r int) {
+import (
+	"fmt"
+
+	utils "github.com/ddiogoo/algoritmos-teoria-e-pratica/Utils"
+)
+
+func Executar() {
+	fmt.Println("Qual o tamanho do array que você deseja ordenar?")
+	fmt.Println("(Os valores serão inseridos automaticamente no array)")
+
+	var size int
+	fmt.Print("Inserir tamanho: ")
+	fmt.Scan(&size)
+
+	utils.ClearConsole()
+
+	arr := utils.GerarArray(size)
+	fmt.Println("Antes de ordenar: ", arr)
+
+	mergeSort(&arr, 0, len(arr)-1)
+	fmt.Println("Depois de ordenar: ", arr)
+
+	otherArr := []int{31, 41, 59, 26, 41, 58}
+	fmt.Println("Antes de ordenar: ", otherArr)
+
+	mergeSort(&otherArr, 0, len(otherArr)-1)
+	fmt.Println("Depois de ordenar: ", otherArr)
+}
+
+func mergeSort(A *[]int, p int, r int) {
 	if p < r {
 		q := (p + r) / 2
-		MergeSort(A, p, q)
-		MergeSort(A, q+1, r)
+		mergeSort(A, p, q)
+		mergeSort(A, q+1, r)
 		merge(A, p, q, r)
 	}
 }
@@ -27,8 +56,7 @@ func merge(A *[]int, p int, q int, r int) {
 	R = append(R, int(^uint(0)>>1))
 
 	i, j := 1, 1
-	var k int
-	for k = p; k <= r; k++ {
+	for k := p; k <= r; k++ {
 		if L[i] <= R[j] {
 			(*A)[k] = L[i]
 			i = i + 1
