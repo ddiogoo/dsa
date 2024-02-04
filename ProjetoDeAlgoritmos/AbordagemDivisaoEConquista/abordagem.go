@@ -22,7 +22,7 @@ func Executar() {
 	mergeSort(&arr, 0, len(arr)-1)
 	fmt.Println("Depois de ordenar: ", arr)
 
-	otherArr := []int{31, 41, 59, 26, 41, 58}
+	otherArr := []int{3, 41, 52, 26, 38, 57, 9, 49}
 	fmt.Println("Antes de ordenar: ", otherArr)
 
 	mergeSort(&otherArr, 0, len(otherArr)-1)
