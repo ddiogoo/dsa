@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	divideandconquerapproach "github.com/ddiogoo/algorithms-theory-and-practice/DivideAndConquerApproach"
-	insertionsort "github.com/ddiogoo/algorithms-theory-and-practice/InsertionSort"
+	divideandconquerapproach "github.com/ddiogoo/algorithms-theory-and-practice/internal/DivideAndConquerApproach"
+	insertionsort "github.com/ddiogoo/algorithms-theory-and-practice/internal/InsertionSort"
 	"github.com/ddiogoo/algorithms-theory-and-practice/utils"
 )
 
