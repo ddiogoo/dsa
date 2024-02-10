@@ -1,3 +1,3 @@
-module github.com/ddiogoo/algoritmos-teoria-e-pratica
+module github.com/ddiogoo/algorithms-theory-and-practice
 
-go 1.21.5
+go 1.21.6
