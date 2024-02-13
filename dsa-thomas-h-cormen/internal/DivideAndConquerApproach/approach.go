@@ -3,7 +3,7 @@ package divideandconquerapproach
 import (
 	"fmt"
 
-	"github.com/ddiogoo/algorithms-theory-and-practice/tree/main/dsa-thomas-h-cormen/utils"
+	"github.com/ddiogoo/dsa/tree/main/dsa-thomas-h-cormen/utils"
 )
 
 // Run provides a simple interface for the user to run both sort methods.

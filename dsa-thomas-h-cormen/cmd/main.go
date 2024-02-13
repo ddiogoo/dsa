@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	divideandconquerapproach "github.com/ddiogoo/algorithms-theory-and-practice/tree/main/dsa-thomas-h-cormen/internal/DivideAndConquerApproach"
-	insertionsort "github.com/ddiogoo/algorithms-theory-and-practice/tree/main/dsa-thomas-h-cormen/internal/InsertionSort"
-	"github.com/ddiogoo/algorithms-theory-and-practice/tree/main/dsa-thomas-h-cormen/utils"
+	divideandconquerapproach "github.com/ddiogoo/dsa/tree/main/dsa-thomas-h-cormen/internal/DivideAndConquerApproach"
+	insertionsort "github.com/ddiogoo/dsa/tree/main/dsa-thomas-h-cormen/internal/InsertionSort"
+	"github.com/ddiogoo/dsa/tree/main/dsa-thomas-h-cormen/utils"
 )
 
 func main() {
