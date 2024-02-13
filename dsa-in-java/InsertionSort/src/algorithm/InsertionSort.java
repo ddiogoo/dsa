@@ -1,7 +1,11 @@
 package algorithm;
 
 public class InsertionSort {
-	public static void sort(char[] data) {
+	public static void run(char[] data) {
+		sort(data);
+	}
+	
+	private static void sort(char[] data) {
 		int n = data.length;
 		for(int i = 1; i < n; i++) {
 			char curr = data[i];

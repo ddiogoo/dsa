@@ -4,15 +4,16 @@ import algorithm.InsertionSort;
 
 public class Main {
 	public static void main(String[] args) {
-		String myName = "diogo";
-		char[] array = myName.toCharArray();
+		String myName = "fedcba";
+		char[] data = myName.toCharArray();
 		
-		System.out.print("Not ordering: ");
-		System.out.println(myName);
+		System.out.println("unordered: ");
+		System.out.println(data);
+		System.out.println();
 		
-		InsertionSort.sort(array);
+		InsertionSort.run(data);
 		
-		System.out.print("Ordering: ");
-		System.out.println(array);
+		System.out.println("ordered: ");
+		System.out.println(data);
 	}
 }
