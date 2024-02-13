@@ -33,7 +33,9 @@ public class InsertionSort {
 	}
 	
 	/**
-	 * Implementing the Insertion Sort algorithm.
+	 * Implementing the Insertion Sort algorithm. To visually understand 
+	 * how this algorithm works, go to page 111 of the book relating to this code 
+	 * (more details in the README).
 	 * 
 	 * @param data Array of values ​​of type char.
 	 * */
