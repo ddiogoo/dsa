@@ -1,8 +1,28 @@
 package algorithm;
 
 public class InsertionSort {
+	public static void run(String data) {
+		char[] dataChar = data.toCharArray();
+		
+		System.out.println("unordered: ");
+		System.out.println(dataChar);
+		System.out.println();
+		
+		sort(dataChar);
+		
+		System.out.println("ordered: ");
+		System.out.println(dataChar);
+	}
+	
 	public static void run(char[] data) {
+		System.out.println("unordered: ");
+		System.out.println(data);
+		System.out.println();
+		
 		sort(data);
+		
+		System.out.println("ordered: ");
+		System.out.println(data);	
 	}
 	
 	private static void sort(char[] data) {
