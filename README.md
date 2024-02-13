@@ -1,4 +1,4 @@
-# Algorithms 
+# DSA 
 
 ## Introduction
 
