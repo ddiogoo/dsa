@@ -1,6 +1,6 @@
 # DSA 
 
-## Introduction
+## About
 
 This is a repository intended for DSA studies, the codes are based on two books: 
 - Algorithms: Theory and Practice by Thomas H. Cormen
