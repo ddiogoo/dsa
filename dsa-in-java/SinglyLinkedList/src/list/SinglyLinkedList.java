@@ -86,4 +86,27 @@ public class SinglyLinkedList<E> {
 		if(size == 0) tail = head;
 		size++;
 	}
+	
+	/**
+	 * Add element to the end of the list.
+	 * */
+	public void addLast(E e) {
+		Node<E> newNode = new Node<E>(e, null);
+		if(isEmpty()) head = newNode;
+		else tail.setNext(newNode);
+		tail = newNode;
+		size++;
+	}
+	
+	/**
+	 * Remove and returns the first element.
+	 * */
+	public E removeFirst() {
+		if(isEmpty()) return null;
+		E answer = head.getElement();
+		head = head.getNext();
+		size--;
+		if(size == 0) tail = null;
+		return answer;
+	}
 }
