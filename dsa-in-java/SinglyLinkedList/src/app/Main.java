@@ -12,7 +12,5 @@ public class Main {
 		System.out.println(s.isEmpty());
 		System.out.println(s.size());
 		s.removeFirst();
-		System.out.println(s.isEmpty());
-		System.out.println(s.size());
 	}
 }
