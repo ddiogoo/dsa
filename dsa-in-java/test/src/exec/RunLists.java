@@ -17,6 +17,10 @@ public class RunLists {
 		s.addLast(4);
 		System.out.println("empty: " + s.isEmpty());
 		System.out.println("size: " + s.size());
+		s.removeFirst();
+		s.removeFirst();
+		System.out.println("empty: " + s.isEmpty());
+		System.out.println("size: " + s.size());
 		s.print();
 	}
 }

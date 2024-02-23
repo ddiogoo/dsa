@@ -45,6 +45,15 @@ public class SinglyLinkedList<T> {
 		size++;
 	}
 	
+	public T removeFirst() {
+		if(isEmpty()) return null;
+		T element = head.element;
+		head = head.next;
+		size--;
+		if(isEmpty()) tail = null;
+		return element;
+	}
+	
 	public void print() {
 		Node<T> curr = head;
 		System.out.println("printing values...");
