@@ -1,5 +1,3 @@
-package algorithm;
-
 public class InsertionSort {
 	/**
 	 * Simple interface that allows the user to pass a string as a parameter, 
