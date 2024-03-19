@@ -18,6 +18,10 @@ public class DoublyLinkedList<E> {
             return prev;
         }
 
+        public void setPrev(Node<E> prev) {
+            this.prev = prev;
+        }
+
         public Node<E> getNext() {
             return next;
         }
@@ -53,5 +57,39 @@ public class DoublyLinkedList<E> {
     public E last() {
         if(isEmpty()) return null;
         return trailer.getPrev().getElement();
+    }
+
+    public void addFirst(E element) {
+        addBetween(element, header, header.getNext());
+    }
+
+    public void addLast(E element) {
+        addBetween(element, trailer.getPrev(), trailer);
+    }
+
+    private void addBetween(E element, Node<E> predecessor, Node<E> sucessor) {
+        Node<E> newest = new Node<E>(element, predecessor, sucessor);
+        predecessor.setNext(sucessor);
+        sucessor.setPrev(newest);
+        size++;
+    }
+
+    public E removeFirst() {
+        if(isEmpty()) return null;
+        return remove(header.getNext());
+    }
+
+    public E removeLast() {
+        if(isEmpty()) return null;
+        return remove(trailer.getPrev());
+    }
+
+    public E remove(Node<E> node) {
+        Node<E> predecessor = node.getPrev();
+        Node<E> sucessor = node.getNext();
+        predecessor.setNext(sucessor);
+        sucessor.setPrev(predecessor);
+        size--;
+        return node.getElement();
     }
 }
